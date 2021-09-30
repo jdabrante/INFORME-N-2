@@ -64,6 +64,67 @@ Hay que tener en cuenta que con este comando no se ve reflejada ninguna acción 
 
 Además es importante tener en cuenta que en el comando anteriormente citado el * corresponde a la versión de Maven.
 
+![Figura.7. Ventana del terminal donde se muestra el comando para la descompresión  del Apache Maven 3.8.2.[Elaboración propia]](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/12M.png "Figura.7. Ventana del terminal donde se muestra el comando para la descompresión  del Apache Maven 3.8.2.[Elaboración propia]")
+
+Además, a continuación se creará un enlace simbólico ligado al directorio de instalación de Maven para que así sea más sencillo, en un futuro, actualizar el software.
+
+Para ello se deberá de utilizar el comando:
+
+**<p align="center"> sudo ln -s /opt/apache-maven-3.8.2 /opt/maven </p>**
+
+![Figura.8. Creación de enlace con el directorio de instalación de Maven.[Elaboración propia]](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/14M.png "Figura.8. Creación de enlace con el directorio de instalación de Maven.[Elaboración propia]")
+
+## 2.2 Variables de entorno
+
+Una vez finalizado los pasos anteriores, se iniciará el establecimiento de las variables de entorno. Para ello se deberá crear un archivo con el nombre mavenv.sh en el directorio /etc/profile.d/ por medio del comando:
+
+**<p aling="center"> sudo nano /etc/profile.d/maven.sh </p>**
+
+Una vez insertado el comando en la terminal (Fig.9) se mostrará una ventana donde deberemos insertar el siguiente código como bien se observa en la figura 10:
+
+**export M2_HOME=/opt/maven**
+
+**export MAVEN_HOME=/opt/maven**
+
+**export PATH=${M2_HOME}/bin:${PATH}**
+
+
+![Figura 9. Ventana del terminal donde se muestra el comando para generar el archivo maven.sh.[Elaboración propia]
+](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/15M.png "Figura 9. Ventana del terminal donde se muestra el comando para generar el archivo maven.sh.[Elaboración propia]")
+
+![Figura.10. Modificación del fichero maven.sh.[Elaboración propia]
+](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/16M.png "Figura.10. Modificación del fichero maven.sh.[Elaboración propia]")
+
+Una vez escrito el código utilizaremos el conjunto de teclas CTRL+O para guardar el cambio realizado al archivo y CTRL+X para salir de este. Habrá que comprobar que efectivamente este cambio se ha realizado (Fig.11).
+
+
+![Figura.11. Archivo  maven.sh con los nuevos valores. [Elaboración propia].
+](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/17M.png "Figura.11. Archivo  maven.sh con los nuevos valores. [Elaboración propia].")
+
+Este archivo es lo que se denomina un “script”, un programa simple que servirá para iniciar el “shell”, es decir, el intérprete de comandos.
+
+Así pues, será posible que el script se pueda ejecutar gracias a la acción del siguiente comando:
+
+**<p align="center"> sudo chmod +x /etc/profile.d/maven.sh </p>**
+
+
+![Figura.12. Ventana del terminal donde se muestra el comando para hacer ejecutable el archivo maven.sh.[Elaboración propia].](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/12M.png "Figura.12. Ventana del terminal donde se muestra el comando para hacer ejecutable el archivo maven.sh.[Elaboración propia].")
+
+Por último será necesario cargar las variables de entorno así como comprobar la versión de Maven por medio de los respectivos comandos:
+
+**<p align="center"> source /etc/profile.d/maven.sh </p>**
+
+**<p align="center"> mvn -version </p>**
+
+![Figura.13. Variables cargadas y verificación de la versión de Apache Maven.[Elaboración propia]](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/20M.png "Figura.13. Variables cargadas y verificación de la versión de Apache Maven.[Elaboración propia]")
+
+Una vez llegados a este punto se pueda dar por finalizada la instalación de Apache Maven 3.8.2 instalado en la máquina virtual (Fig.13).
+
+
+
+
+
+
 
 
 
