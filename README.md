@@ -22,7 +22,7 @@ Una vez dicho esto a continuación se desarrollará la instalación de Apache Ma
  
  **<p align="center"> sudo apt update </p>**
  
- ![Figura.1. Ventana del terminal donde se ve reflejado el comando necesario para la actualización del paquete. [Elaboración propia]](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/1M.png "Figura.1. Ventana del terminal donde se ve reflejado el comando necesario para la actualización del paquete. [Elaboración propia]")
+![Figura.1. Ventana del terminal donde se ve reflejado el comando necesario para la actualización del paquete. [Elaboración propia]](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/1M.png "Figura.1. Ventana del terminal donde se ve reflejado el comando necesario para la actualización del paquete. [Elaboración propia]")
 
 Una vez actualizado el paquete se procederá a la instalación de Maven. Para ello se utilizará el comando:
 
@@ -118,7 +118,7 @@ Por último será necesario cargar las variables de entorno así como comprobar 
 
 ![Figura.13. Variables cargadas y verificación de la versión de Apache Maven.[Elaboración propia]](https://raw.githubusercontent.com/jdabrante/INFORME-N-2/DAW/20M.png "Figura.13. Variables cargadas y verificación de la versión de Apache Maven.[Elaboración propia]")
 
-Una vez llegados a este punto se pueda dar por finalizada la instalación de Apache Maven 3.8.2 instalado en la máquina virtual (Fig.13).
+Una vez llegados a este punto se pueda dar por finalizada la instalación de Apache Maven 3.8.2 en la máquina virtual (Fig.13).
 
 
 
